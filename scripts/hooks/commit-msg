@@ -15,20 +15,31 @@ if echo "$COMMIT_MSG" | grep -qE '^(Merge|fixup!|squash!)'; then
   exit 0
 fi
 
+# Skip the very first commit in a repo (no parent yet)
+if ! git rev-parse HEAD >/dev/null 2>&1; then
+  exit 0
+fi
+
+# Allow conventional commit prefixes that don't map to a ticket
+# (chore, docs, init, ci, build, style, refactor, test, revert)
+if echo "$COMMIT_MSG" | grep -qE '^(chore|docs|init|ci|build|style|refactor|test|revert)(\(.+\))?!?:'; then
+  exit 0
+fi
+
 # ── JIRA ticket ID format ────────────────────────────────────────────────────
-# Expected format: PROJ-123: description
-# Update JIRA_PATTERN to match your project's ticket prefix (e.g. MYAPP-\d+)
+# Expected format: SCRUM-123: description
+# Update JIRA_PATTERN to match your project's ticket prefix
 #
 JIRA_PATTERN='^[A-Z][A-Z0-9]+-[0-9]+: .+'
 
 if ! echo "$COMMIT_MSG" | grep -qE "$JIRA_PATTERN"; then
   echo -e "${RED}✗ Commit message does not include a JIRA ticket ID.${NC}"
   echo ""
-  echo "  Expected format:  PROJ-123: description of change"
+  echo "  Expected format:  SCRUM-123: description of change"
   echo "  Your message:     $COMMIT_MSG"
   echo ""
-  echo "  Update JIRA_PATTERN in scripts/hooks/commit-msg if your"
-  echo "  project uses a different prefix."
+  echo "  Tip: prefix with chore:, docs:, ci: etc. to skip this check"
+  echo "  for commits that don't map to a ticket."
   exit 1
 fi
 

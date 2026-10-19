@@ -24,7 +24,7 @@ SECRETS_PATTERNS=(
   'sk-[a-zA-Z0-9]{32,}'       # OpenAI / Anthropic key pattern
 )
 
-STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v '^scripts/hooks/')
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v '^scripts/hooks/' || true)
 
 if [ -n "$STAGED_FILES" ]; then
   FOUND_SECRETS=0

@@ -1,0 +1,21 @@
+# Claude MCP config — contains API tokens
+.claude/mcp.json
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# AWS CDK
+cdk.out/
+
+# OS
+.DS_Store

@@ -50,7 +50,7 @@ run_check() {
 REQUIRED_ENV=()
 # REQUIRED_ENV=("DATABASE_URL" "API_KEY" "NODE_ENV")
 
-for var in "${REQUIRED_ENV[@]}"; do
+for var in "${REQUIRED_ENV[@]+"${REQUIRED_ENV[@]}"}"; do
   if [ -z "${!var:-}" ]; then
     echo -e "${RED}  ✗ Required env var not set: $var${NC}"
     FAILED=1

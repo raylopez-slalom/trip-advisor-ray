@@ -152,13 +152,33 @@ CLARIFY:
 
 If there are BLOCKING gaps:
 - Do not proceed
-- Post the brief to the JIRA ticket as a comment (if JIRA is configured)
-- Assign the blockers to the appropriate person
+- If JIRA is configured: post the brief as a comment on the ticket so the PM sees the blockers
+- Tell the developer who to contact to resolve each blocker
 
 If only CLARIFY or ASSUMPTION items:
 - Present the brief to the developer
 - Ask: "Proceed with these assumptions? (yes / adjust)"
-- On yes: save as `docs/briefs/[ID].md` and start coding
+- On yes:
+  1. Save the brief as `docs/briefs/[ID].md`
+  2. **If JIRA is configured**, update the ticket — do all three steps, but if any call
+     fails treat it as a warning (log what failed) and continue; never block
+     implementation because of a JIRA write error:
+     - Query available transitions: `GET /rest/api/3/issue/{key}/transitions`
+     - Find the transition named "In Progress" or "In Development" (match case-insensitively)
+     - If found: `POST /rest/api/3/issue/{key}/transitions` with that transition ID
+     - Assign to current user (ATLASSIAN_EMAIL from .mcp.json):
+       `PUT /rest/api/3/issue/{key}/assignee`
+     - Post the dev brief as a comment on the ticket
+     - Confirm to the developer:
+       ```
+       ✓ PROJ-123 assigned to you and moved to In Progress
+       ✓ Dev brief posted as JIRA comment
+       ```
+     - If JIRA is not configured or any call fails:
+       ```
+       ⚠ JIRA not configured — skipping ticket update (set up .mcp.json to enable)
+       ```
+  3. Start coding
 
 ---
 
@@ -195,7 +215,7 @@ The skill uses the "Done" section to understand what's already implemented.
 ## What this skill does NOT do
 
 - Does not write any code
-- Does not modify JIRA tickets (read-only via MCP)
+- Does not close or delete JIRA tickets
 - Does not make architecture decisions — flags them for human resolution
 - Does not guarantee the ticket is correctly scoped — that is the PM's responsibility
 - Does not assign tickets or change their status in JIRA

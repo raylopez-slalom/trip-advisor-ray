@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { type FormEvent, useState } from 'react'
 import type { BudgetCategory, Constraint, Interest, Preference, TripBrief } from '@trip-advisor/shared'
 import { TripBriefSchema } from '@trip-advisor/shared'
 import { classifyTripBrief } from '../lib/classifier.js'
@@ -138,7 +138,7 @@ export default function TripBriefForm({ onSubmit }: TripBriefFormProps) {
     setErrors((e) => { const next = { ...e }; delete next[key]; return next })
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault()
 
     const newErrors: Record<string, string> = {}

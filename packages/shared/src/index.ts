@@ -1,3 +1,3 @@
 export * from './types.js'
 export * from './schemas.js'
-export * from './catalog.js'
+// catalog.ts uses node:fs — import from '@trip-advisor/shared/catalog' in server packages only

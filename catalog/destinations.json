@@ -1,0 +1,794 @@
+[
+  {
+    "id": "mexico-city",
+    "name": "Mexico City",
+    "region": "North America",
+    "country": "Mexico",
+    "tags": ["food", "culture", "history"],
+    "goodFor": ["walkable", "public-transit-friendly", "budget-friendly", "food-lovers", "museum-goers"],
+    "notIdealFor": ["beach seekers", "travelers with high altitude sensitivity"],
+    "flightFromHubs": [
+      {
+        "fromCity": "New York",
+        "fromIata": "JFK",
+        "roundTripRangeLow": 350,
+        "roundTripRangeHigh": 600,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "Budget carriers available via Volaris and VivaAerobus"
+      },
+      {
+        "fromCity": "Los Angeles",
+        "fromIata": "LAX",
+        "roundTripRangeLow": 280,
+        "roundTripRangeHigh": 520,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "Frequent nonstop service"
+      },
+      {
+        "fromCity": "Chicago",
+        "fromIata": "ORD",
+        "roundTripRangeLow": 300,
+        "roundTripRangeHigh": 540,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      },
+      {
+        "fromCity": "Miami",
+        "fromIata": "MIA",
+        "roundTripRangeLow": 270,
+        "roundTripRangeHigh": 480,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      }
+    ],
+    "typicalAccommodation": [
+      {
+        "type": "budget-hotel",
+        "perNightRangeLow": 40,
+        "perNightRangeHigh": 80,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "mid-range-hotel",
+        "perNightRangeLow": 80,
+        "perNightRangeHigh": 160,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "boutique-hotel",
+        "perNightRangeLow": 130,
+        "perNightRangeHigh": 280,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "activityCostRange": {
+      "low": 10,
+      "high": 60,
+      "currency": "USD",
+      "source": {
+        "label": "Mexico Tourism Board",
+        "url": "https://www.visitmexico.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "mealCostRange": {
+      "low": 20,
+      "high": 60,
+      "currency": "USD",
+      "source": {
+        "label": "TripAdvisor",
+        "url": "https://www.tripadvisor.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "localTransportCostRange": {
+      "low": 5,
+      "high": 20,
+      "currency": "USD",
+      "source": {
+        "label": "Metro CDMX",
+        "url": "https://metro.cdmx.gob.mx",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "seasonalNotes": [
+      {
+        "months": [6, 7, 8, 9],
+        "summary": "Rainy season — afternoon showers are common but brief. Temperatures mild (15–25°C).",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "months": [11, 12, 1, 2],
+        "summary": "Dry and cool season — ideal for sightseeing. Temperatures 12–22°C.",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "lastReviewed": "2026-10-20",
+    "reviewedBy": "RL"
+  },
+  {
+    "id": "lisbon",
+    "name": "Lisbon",
+    "region": "Europe",
+    "country": "Portugal",
+    "tags": ["culture", "food", "history", "wellness"],
+    "goodFor": ["walkable", "public-transit-friendly", "historic-architecture", "beach-day-trips", "wine-lovers"],
+    "notIdealFor": ["travelers avoiding hills", "budget travelers on very tight budgets"],
+    "flightFromHubs": [
+      {
+        "fromCity": "New York",
+        "fromIata": "JFK",
+        "roundTripRangeLow": 500,
+        "roundTripRangeHigh": 950,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "TAP Air Portugal operates direct flights"
+      },
+      {
+        "fromCity": "Los Angeles",
+        "fromIata": "LAX",
+        "roundTripRangeLow": 650,
+        "roundTripRangeHigh": 1100,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "Usually one stop via east coast hub"
+      },
+      {
+        "fromCity": "Chicago",
+        "fromIata": "ORD",
+        "roundTripRangeLow": 560,
+        "roundTripRangeHigh": 1000,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      }
+    ],
+    "typicalAccommodation": [
+      {
+        "type": "budget-hotel",
+        "perNightRangeLow": 60,
+        "perNightRangeHigh": 100,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "mid-range-hotel",
+        "perNightRangeLow": 100,
+        "perNightRangeHigh": 200,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "boutique-hotel",
+        "perNightRangeLow": 160,
+        "perNightRangeHigh": 350,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "activityCostRange": {
+      "low": 15,
+      "high": 80,
+      "currency": "USD",
+      "source": {
+        "label": "Visit Lisboa",
+        "url": "https://www.visitlisboa.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "mealCostRange": {
+      "low": 25,
+      "high": 80,
+      "currency": "USD",
+      "source": {
+        "label": "TripAdvisor",
+        "url": "https://www.tripadvisor.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "localTransportCostRange": {
+      "low": 8,
+      "high": 25,
+      "currency": "USD",
+      "source": {
+        "label": "Carris / Metro Lisboa",
+        "url": "https://www.metrolisboa.pt",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "seasonalNotes": [
+      {
+        "months": [6, 7, 8],
+        "summary": "Peak summer — hot and dry (25–35°C), very crowded. Book well in advance.",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "months": [3, 4, 5, 9, 10],
+        "summary": "Shoulder season — mild temperatures (16–24°C), smaller crowds, best value.",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "lastReviewed": "2026-10-20",
+    "reviewedBy": "RL"
+  },
+  {
+    "id": "tokyo",
+    "name": "Tokyo",
+    "region": "Asia",
+    "country": "Japan",
+    "tags": ["food", "culture", "history", "family-friendly"],
+    "goodFor": ["world-class-transit", "food-lovers", "tech-enthusiasts", "family-trips", "walkable-neighborhoods"],
+    "notIdealFor": ["very tight budgets", "travelers who prefer low-key environments"],
+    "flightFromHubs": [
+      {
+        "fromCity": "Los Angeles",
+        "fromIata": "LAX",
+        "roundTripRangeLow": 700,
+        "roundTripRangeHigh": 1300,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "~11-hour nonstop via JAL or ANA"
+      },
+      {
+        "fromCity": "New York",
+        "fromIata": "JFK",
+        "roundTripRangeLow": 850,
+        "roundTripRangeHigh": 1500,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "~14 hours; connecting flights often cheaper"
+      },
+      {
+        "fromCity": "Chicago",
+        "fromIata": "ORD",
+        "roundTripRangeLow": 800,
+        "roundTripRangeHigh": 1400,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      }
+    ],
+    "typicalAccommodation": [
+      {
+        "type": "budget-hotel",
+        "perNightRangeLow": 70,
+        "perNightRangeHigh": 120,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "mid-range-hotel",
+        "perNightRangeLow": 120,
+        "perNightRangeHigh": 250,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "boutique-hotel",
+        "perNightRangeLow": 200,
+        "perNightRangeHigh": 450,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "activityCostRange": {
+      "low": 15,
+      "high": 70,
+      "currency": "USD",
+      "source": {
+        "label": "Japan National Tourism Organization",
+        "url": "https://www.jnto.go.jp",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "mealCostRange": {
+      "low": 20,
+      "high": 80,
+      "currency": "USD",
+      "source": {
+        "label": "TripAdvisor",
+        "url": "https://www.tripadvisor.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "localTransportCostRange": {
+      "low": 10,
+      "high": 30,
+      "currency": "USD",
+      "source": {
+        "label": "Tokyo Metro",
+        "url": "https://www.tokyometro.jp",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "seasonalNotes": [
+      {
+        "months": [3, 4],
+        "summary": "Cherry blossom season — extremely popular, book 6+ months ahead. Mild temperatures (10–18°C).",
+        "source": {
+          "label": "Japan National Tourism Organization",
+          "url": "https://www.jnto.go.jp",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "months": [7, 8],
+        "summary": "Hot and humid (27–35°C). Typhoon season begins in August.",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "months": [10, 11],
+        "summary": "Fall foliage — comfortable temperatures (14–22°C) and beautiful scenery.",
+        "source": {
+          "label": "Japan National Tourism Organization",
+          "url": "https://www.jnto.go.jp",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "lastReviewed": "2026-10-20",
+    "reviewedBy": "RL"
+  },
+  {
+    "id": "cancun",
+    "name": "Cancún",
+    "region": "Caribbean",
+    "country": "Mexico",
+    "tags": ["outdoor-adventure", "wellness", "family-friendly", "nightlife"],
+    "goodFor": ["beach-lovers", "all-inclusive-resorts", "snorkeling", "families", "water-sports"],
+    "notIdealFor": ["culture-focused travelers", "budget backpackers avoiding resort zones"],
+    "flightFromHubs": [
+      {
+        "fromCity": "New York",
+        "fromIata": "JFK",
+        "roundTripRangeLow": 300,
+        "roundTripRangeHigh": 600,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "Frequent nonstop service"
+      },
+      {
+        "fromCity": "Los Angeles",
+        "fromIata": "LAX",
+        "roundTripRangeLow": 350,
+        "roundTripRangeHigh": 680,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      },
+      {
+        "fromCity": "Chicago",
+        "fromIata": "ORD",
+        "roundTripRangeLow": 280,
+        "roundTripRangeHigh": 550,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      },
+      {
+        "fromCity": "Miami",
+        "fromIata": "MIA",
+        "roundTripRangeLow": 180,
+        "roundTripRangeHigh": 380,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "Shortest flight (~1.5 hours)"
+      }
+    ],
+    "typicalAccommodation": [
+      {
+        "type": "budget-hotel",
+        "perNightRangeLow": 50,
+        "perNightRangeHigh": 100,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "mid-range-hotel",
+        "perNightRangeLow": 120,
+        "perNightRangeHigh": 250,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "vacation-rental",
+        "perNightRangeLow": 100,
+        "perNightRangeHigh": 300,
+        "currency": "USD",
+        "source": {
+          "label": "Vrbo",
+          "url": "https://www.vrbo.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "activityCostRange": {
+      "low": 20,
+      "high": 100,
+      "currency": "USD",
+      "source": {
+        "label": "Cancún Convention & Visitors Bureau",
+        "url": "https://cancun.travel",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "mealCostRange": {
+      "low": 20,
+      "high": 70,
+      "currency": "USD",
+      "source": {
+        "label": "TripAdvisor",
+        "url": "https://www.tripadvisor.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "localTransportCostRange": {
+      "low": 5,
+      "high": 30,
+      "currency": "USD",
+      "source": {
+        "label": "R-1 Bus / Cancún Transit",
+        "url": null,
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "seasonalNotes": [
+      {
+        "months": [12, 1, 2, 3, 4],
+        "summary": "Dry season — peak travel time. Temperatures 24–30°C, sunny. Book well ahead.",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "months": [6, 7, 8, 9, 10],
+        "summary": "Hurricane season — lower prices but risk of tropical storms. Travel insurance strongly recommended.",
+        "source": {
+          "label": "National Hurricane Center",
+          "url": "https://www.nhc.noaa.gov",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "lastReviewed": "2026-10-20",
+    "reviewedBy": "RL"
+  },
+  {
+    "id": "nashville",
+    "name": "Nashville",
+    "region": "North America",
+    "country": "United States",
+    "tags": ["food", "nightlife", "culture"],
+    "goodFor": ["music-lovers", "food-scene", "walkable-downtown", "no-passport-needed", "bachelorette-groups"],
+    "notIdealFor": ["travelers seeking nature or outdoor activities", "those avoiding loud nightlife"],
+    "flightFromHubs": [
+      {
+        "fromCity": "New York",
+        "fromIata": "JFK",
+        "roundTripRangeLow": 150,
+        "roundTripRangeHigh": 350,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "~2.5-hour nonstop"
+      },
+      {
+        "fromCity": "Los Angeles",
+        "fromIata": "LAX",
+        "roundTripRangeLow": 180,
+        "roundTripRangeHigh": 400,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "~4.5-hour nonstop"
+      },
+      {
+        "fromCity": "Chicago",
+        "fromIata": "ORD",
+        "roundTripRangeLow": 100,
+        "roundTripRangeHigh": 250,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": "~1.5-hour nonstop"
+      },
+      {
+        "fromCity": "Miami",
+        "fromIata": "MIA",
+        "roundTripRangeLow": 130,
+        "roundTripRangeHigh": 300,
+        "currency": "USD",
+        "source": {
+          "label": "Google Flights",
+          "url": "https://www.google.com/travel/flights",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        },
+        "notes": null
+      }
+    ],
+    "typicalAccommodation": [
+      {
+        "type": "budget-hotel",
+        "perNightRangeLow": 80,
+        "perNightRangeHigh": 130,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "mid-range-hotel",
+        "perNightRangeLow": 130,
+        "perNightRangeHigh": 230,
+        "currency": "USD",
+        "source": {
+          "label": "Booking.com",
+          "url": "https://www.booking.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "type": "vacation-rental",
+        "perNightRangeLow": 100,
+        "perNightRangeHigh": 250,
+        "currency": "USD",
+        "source": {
+          "label": "Vrbo",
+          "url": "https://www.vrbo.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "activityCostRange": {
+      "low": 15,
+      "high": 60,
+      "currency": "USD",
+      "source": {
+        "label": "Nashville Convention & Visitors Corp",
+        "url": "https://www.visitmusiccity.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "mealCostRange": {
+      "low": 25,
+      "high": 75,
+      "currency": "USD",
+      "source": {
+        "label": "TripAdvisor",
+        "url": "https://www.tripadvisor.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "localTransportCostRange": {
+      "low": 10,
+      "high": 40,
+      "currency": "USD",
+      "source": {
+        "label": "WeGo Nashville Transit",
+        "url": "https://www.wegotransit.com",
+        "dateChecked": "2026-10-20",
+        "isStale": false
+      }
+    },
+    "seasonalNotes": [
+      {
+        "months": [4, 5, 9, 10],
+        "summary": "Best weather — mild temperatures (15–24°C), many outdoor events and festivals.",
+        "source": {
+          "label": "Weather.com",
+          "url": "https://weather.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      },
+      {
+        "months": [6, 7, 8],
+        "summary": "Hot and humid (27–35°C). CMA Music Festival in June draws large crowds.",
+        "source": {
+          "label": "Nashville Convention & Visitors Corp",
+          "url": "https://www.visitmusiccity.com",
+          "dateChecked": "2026-10-20",
+          "isStale": false
+        }
+      }
+    ],
+    "lastReviewed": "2026-10-20",
+    "reviewedBy": "RL"
+  }
+]

@@ -1,2 +1,3 @@
-// Phase 2 — TypeScript interfaces and Zod schemas added here
-export {}
+export * from './types.js'
+export * from './schemas.js'
+export * from './catalog.js'

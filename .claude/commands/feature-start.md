@@ -38,6 +38,16 @@ best next task for the developer to work on.
    Which would you like to work on? (Enter number or ticket ID)
    ```
 4. If none assigned: show unassigned "To Do" tickets in the sprint and ask
+5. **Collision guard for unassigned tickets**: before proceeding with any ticket
+   that was unassigned at query time, re-fetch it (`GET /rest/api/3/issue/{key}`)
+   and check the current assignee and status. If it has been claimed since the
+   query (assignee is not null and not the current user, or status changed to
+   "In Progress"), warn immediately:
+   ```
+   ⚠ PROJ-123 was just claimed by another developer.
+     Assigned to: jane.smith@example.com  Status: In Progress
+     Pick a different ticket? (yes / proceed anyway)
+   ```
 
 **If no JIRA MCP is configured:**
 1. Check for `docs/backlog.md` — a prioritized list of features to build.
@@ -60,6 +70,18 @@ best next task for the developer to work on.
    Proceed with this feature? (yes / pick a different one)
    ```
 5. If the developer picks a different feature, ask them to name it or show the full list
+6. **Collision guard for backlog.md teams**: on confirmation, immediately move the
+   feature from "Ready to build" to an "## In Progress" section in `docs/backlog.md`
+   with the developer's name and date, then commit that change before creating the
+   branch or writing any code:
+   ```markdown
+   ## In Progress
+   ### [Feature name]
+   Claimed by: [ATLASSIAN_EMAIL or git config user.email] — [date]
+   ```
+   A second developer pulling the repo before starting will see the feature is claimed
+   and skip it. If two developers claim simultaneously, the one whose commit lands
+   second will see a merge conflict on `docs/backlog.md` — a clear signal to coordinate.
 
 **If no docs and no JIRA:**
 Ask the developer to describe what to build:
@@ -168,6 +190,18 @@ If only CLARIFY or ASSUMPTION items:
      - If found: `POST /rest/api/3/issue/{key}/transitions` with that transition ID
      - Assign to current user (ATLASSIAN_EMAIL from .mcp.json):
        `PUT /rest/api/3/issue/{key}/assignee`
+     - **Re-read the ticket to confirm ownership** (`GET /rest/api/3/issue/{key}`):
+       - If `assignee.emailAddress` matches ATLASSIAN_EMAIL → proceed normally
+       - If it does not match (another developer claimed it in the same moment):
+         ```
+         ⚠ Collision detected — PROJ-123 was claimed by someone else
+           just as you approved the brief.
+           Assigned to: jane.smith@example.com
+           Options:
+             1. Pick a different ticket (/feature-start)
+             2. Coordinate with jane.smith and proceed on this branch anyway
+         ```
+         Stop and wait for developer input. Do not create a branch or start coding.
      - Post the dev brief as a comment on the ticket
      - Confirm to the developer:
        ```

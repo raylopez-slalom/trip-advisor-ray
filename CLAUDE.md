@@ -109,9 +109,9 @@ GitHub Actions uses OIDC with scoped IAM roles — no `AWS_ACCESS_KEY_ID` / `AWS
 
 ## Issue tracking
 
-- **JIRA board**: https://slalom-team-zhxx4q21.atlassian.net/jira/software/projects/SCRUM/boards/1
-- **Ticket prefix**: `SCRUM`
-- **Commit format**: `SCRUM-123: short imperative description`
+- **JIRA board**: https://slalom-team-zhxx4q21.atlassian.net/jira/software/projects/TAR1/boards/3/backlog
+- **Ticket prefix**: `TAR1`
+- **Commit format**: `TAR1-123: short imperative description`
 - MCP config: `.claude/mcp.json` (requires `ATLASSIAN_TOKEN` env var)
 
 ## Development workflow

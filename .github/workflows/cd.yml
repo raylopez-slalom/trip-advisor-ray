@@ -1,0 +1,46 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write   # required for OIDC token exchange
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # TODO (Phase 7): Remove the `if: false` once AWS resources are provisioned
+    if: false
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # TODO (Phase 7): Add OIDC role ARN to GitHub secrets as AWS_DEPLOY_ROLE_ARN
+      # and region to GitHub vars as AWS_REGION
+      # - name: Configure AWS credentials
+      #   uses: aws-actions/configure-aws-credentials@v4
+      #   with:
+      #     role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+      #     aws-region: ${{ vars.AWS_REGION }}
+
+      # TODO (Phase 7): Build and deploy Lambda via CDK
+      # - name: Deploy infrastructure
+      #   run: npm run synth -w packages/infra && npx cdk deploy --require-approval never
+      #   working-directory: packages/infra
+
+      # TODO (Phase 7): Build and deploy web app to Amplify
+      # - name: Build web
+      #   run: npm run build -w packages/web
+
+      - name: Placeholder
+        run: echo "CD pipeline ready — deploy steps activated in Phase 7"

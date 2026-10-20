@@ -17,5 +17,13 @@ out/
 # AWS CDK
 cdk.out/
 
+# Test output
+playwright-report/
+test-results/
+
+# TypeScript build artifacts
+*.tsbuildinfo
+*.d.ts.map
+
 # OS
 .DS_Store

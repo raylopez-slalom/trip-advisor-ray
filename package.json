@@ -1,0 +1,24 @@
+{
+  "name": "trip-advisor-ray",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "workspaces": ["packages/*", "e2e"],
+  "scripts": {
+    "dev": "npm run dev -w packages/web",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "test": "npm run test -w packages/web",
+    "test:e2e": "npm run test -w e2e"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -28,7 +28,7 @@ jobs:
         id: extract
         run: |
           TITLE="${{ github.event.pull_request.title }}"
-          TICKET=$(echo "$TITLE" | grep -oE '[A-Z]+-[0-9]+' | head -1)
+          TICKET=$(echo "$TITLE" | grep -oE '[A-Z][A-Z0-9]+-[0-9]+' | head -1)
           if [ -z "$TICKET" ]; then
             echo "No JIRA ticket ID found in PR title: $TITLE"
             echo "found=false" >> $GITHUB_OUTPUT

@@ -178,7 +178,15 @@ If only CLARIFY or ASSUMPTION items:
        ```
        ⚠ JIRA not configured — skipping ticket update (set up .mcp.json to enable)
        ```
-  3. Start coding
+  3. Create and check out a feature branch before touching any files:
+     - Branch name format: `feature/[ID]-[short-slug]`
+       e.g. `feature/PROJ-123-user-authentication`
+       or   `feature/add-itinerary-view` (no JIRA ID case)
+     - Slug: lowercase, hyphens, max 40 chars, derived from the feature title
+     - Run: `git checkout -b feature/[ID]-[slug]`
+     - Confirm to the developer: `✓ On branch feature/PROJ-123-user-authentication`
+     - If the branch already exists, check it out instead of creating a new one
+  4. Start coding
 
 ---
 

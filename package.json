@@ -10,7 +10,7 @@
     "build": "npm run build --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "eslint .",
-    "test": "npm run test -w packages/web",
+    "test": "npm run test -w packages/shared -w packages/web",
     "test:e2e": "npm run test -w e2e"
   },
   "devDependencies": {
